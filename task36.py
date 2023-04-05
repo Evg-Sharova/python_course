@@ -19,13 +19,15 @@ print_operation_table(operation, num_rows=6, num_columns=6),
 5 10 15 20 25 30
 6 12 18 24 30 36"""
 
-n = int(input("Введите кол-во строк: "))
-m = int(input("Введите кол-во столбцов: "))
+#n = int(input("Введите кол-во строк: "))
+#m = int(input("Введите кол-во столбцов: "))
 
-for x in range(1, n + 1):
-    for y in range(1, m + 1):
-        print(f' {x * y:2}', end='')
-    print()
+def print_operation_table(n, m):
+    for x in range(1, n + 1):
+        for y in range(1, m + 1):
+            print(f' {x * y:2}', end='')
+        print()
 
+print_operation_table(4, 5)
       
 
